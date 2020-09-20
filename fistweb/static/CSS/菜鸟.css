@@ -1,0 +1,141 @@
+*,
+::before,
+::after{
+    box-sizing: border-box;
+}
+*{
+    padding:0; 
+    margin:0;
+}
+body{
+    background-color: #f6f6f6;
+    height: 100%;
+}
+
+div#headr{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+}
+
+ul{
+    display: flex;
+    background-color:#158467;
+    color: white;
+    height: 34px;
+    list-style-type: none;
+}
+li{
+    align-self: flex-end;
+    margin-left: 40px;
+    color: #e3efd9;
+    /* flex:0 0 10%; */
+}
+
+li#li_one{
+    margin-left: 226px;
+}
+a{
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    font-size: 80%;
+    text-decoration: none;
+}
+div>a{
+    transition: 1s;
+}
+div>a:hover{
+    font-weight: bold;
+}
+div.import{
+    display: flex;
+    background-color: #f6f6f6ff;
+    padding-top: 18px;
+}
+div#contente_left{
+    display: flex;
+    flex-direction: column;
+    /* background-color: yellow; */
+    background-color:white;
+    flex: 0 0 180px;
+    margin-left: 10%;
+    align-content: center;
+    padding-left: 65px;
+    height: 450px;
+}
+#contente_left>div>a{
+    color: black;
+}
+div#contente_center{
+
+    background-color: #fff;
+    flex: 0 0 860px;
+    margin-left: 15px;
+    font-size: 20px;
+    padding-left: 60px;
+}
+div#contente_center>h2{
+    padding-top: 5px;
+    margin-left: 15px;
+    font-size: 20px;
+    font-weight: normal;
+    color: #3E3B3F;
+}
+div#contente_center>h2:nth-child(n+2){
+    
+    margin-left: 15px;
+    font-size: 20px;
+    font-weight: normal;
+    color: #3E3B3F;
+    padding-top: 60px;
+
+}
+div#contente_center>p{
+    margin-left: 15px;
+    font-size: 15px;
+    color: #666;
+    /* font-weight: normal; */
+}
+div#contente_center>p:last-child{
+    padding-bottom: 50px;
+}
+div#contente_right{
+
+    background-color: #f7d6bf;
+    flex: 0 0 180px;
+    margin-left: 15px;
+    height: 405px;
+}
+footer{
+    
+    background-color: #fff;
+    height: 250px;
+    margin-top: 20px;
+   
+}
+footer>:first-child{
+    /* margin-left: 50px; */
+    display: flex;
+    width: 64%;
+    justify-content: flex-end;
+
+}
+footer>div>#foot1{
+    padding-right: 10px;
+}
+footer>div>.foot{
+    padding-right: 200px;
+}
+div#img2{
+    position: fixed;
+    top:800px;
+    right: 10px;
+}
+div#img3{
+    position: fixed;
+    top:808px;
+    right: 62px;
+    display: none;
+}

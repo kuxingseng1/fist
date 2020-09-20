@@ -1,0 +1,31 @@
+<!--嵩天课程项目 留言板功能实现 首页用来添加留言-->
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title> title </title>
+    <script type="text/javascript" src="/static/JS/fist.js"></script>
+    <link rel="stylesheet"  href="/static/CSS/fist.css" charset="UTF-8">
+</head>
+<!--<IfModule mod_headers.c>-->
+<!--#       Header set X-Content-Type-Options "nosniff"-->
+<!--        Header set X-XSS-protection "mode=block"-->
+<!--        RequestHeader unset Range-->
+<!--</IfModule>-->
+<body>
+<p id="header">欢迎访问我的第一个小网页 <br>
+    这是一个留言板写下你想对我说的话吧</p>
+    <img id ="img" src="/static/image/2.jpg", width="340",height="228" alt="error">
+    <div id="container">
+        <form method="get"   action="/message">
+            名称:<input type="text" name="name" value="名称"><br><br>
+            留言:<input type="text" name="title" value="留言"><br><br><br>
+    <!--        选择图片：<input type="file" name="img" value="img"><br>-->
+<!--            <input type="file" name="file" value="file"><br><br><br>-->
+            <input id="footer" type="submit" value="提交">
+        </form>
+    </div>
+
+</body>
+</html>
+

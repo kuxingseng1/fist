@@ -1,0 +1,28 @@
+
+.container {
+    font-size:15px
+   }
+   .container h2 {
+    margin-top:10px;
+    font-size:30px;
+    font-weight:400
+   }
+   .container .archive-post {
+    border-left:1px solid #ccc;
+    padding:3px 20px;
+    width:-webkit-fit-content;
+    width:-moz-fit-content;
+    width:fit-content
+   }
+   .container .archive-post:hover {
+    border-left:3px solid #BE4F8D;
+    -webkit-transition:.2s ease-out;
+    transition:.2s ease-out;
+    -webkit-transform:translateX(4px);
+    transform:translateX(4px)
+   }
+   .container .archive-post .uptime {
+    margin-right:10px;
+    color:#8a8a8a
+   }
+   
