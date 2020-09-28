@@ -7,9 +7,12 @@
 <body>
 <div>
     <p>
+        {{error}}
+    </p>
+    <p>
     你没有权限访问请登录
     </p>
-    <a href="Log_on.html">
+    <a href="{% url 'Rookie:home' %}">
         <button type="button" >
             返回登录
         </button>

@@ -6,19 +6,24 @@
 </head>
 <body style=" height: 100%; background:#4C964D;">
 <!-- <form action="logon" method="post" style=" display: flex; margin-top: 500px; margin-left: 780px"> -->
+
 <div style=" display: flex; height: 849px;   justify-content: center; align-items: center;">
-    <form action=" " method="POST" >
+    {% block head%}
+    <form action="/logon/" method="POST" >
         {{error}}
         {% csrf_token%}
-        <input type="text" name="name">
+        <input type="text" name="user">
         <input type="password" name="password">
+        {% block form%}
         <input type="submit" value="登录">
+        {% endblock form%}
     </form>
     <a href="{% url 'Rookie:home' %}">返回主页</a>
-
+    {% endblock head %}
 </div>
 <footer style="padding-left: 50%;color: #ffffff">
     <p>登录界面</p>
 </footer>
+
 </body>
 </html>

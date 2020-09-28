@@ -1,0 +1,19 @@
+{% extends 'Log_on.html' %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+{% block head%}
+    <form action="/register/" method="POST" >
+        {% csrf_token%}
+        <input type="text" name="user">
+        <input type="password" name="password">
+        <input type="submit" value="注册">
+    </form>
+    <a href="{% url 'Rookie:home' %}">返回主页</a>
+{% endblock head %}

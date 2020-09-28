@@ -22,5 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # path('index/', views.hello),
     # path('', include('fistapp.urls')),
-    path('',include('Rookie.urls')),
+    path('', include('Rookie.urls')),
 ]

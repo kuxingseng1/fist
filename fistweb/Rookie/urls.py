@@ -9,4 +9,6 @@ urlpatterns = [
     # # 登录url
     path("home/", views.home,name='home'),
     path("logon/", views.user_logon, name='user_logon'),
+    path("register/", views.register),
+
 ]
